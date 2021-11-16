@@ -1,0 +1,58 @@
+body {
+    background: #444444;
+  }
+  h1{
+  color: #FFD600;
+  }
+  
+  div.container2 {
+    display: flex;
+    flex-direction: column;
+  
+    max-width: 200px;
+    max-height: 430px;
+    width: 30%;
+   
+    margin: auto;
+    padding: 40px;
+    margin-top: 5rem;
+    height: 500px;
+    line-height: 60px;
+    
+  
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    
+   
+  
+ }
+  
+  form div.group2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    
+  }
+  input{
+    border-radius: 8px;
+    height: 30px;
+    width: 200px;
+  }
+ 
+  div.group input {
+   
+    color: var(--title);
+  }
+ 
+  
+  button {
+    border-radius: 8px;
+    height: 2.5rem;
+    background:  
+    #835AFD;
+  }
+  
+  
+  
