@@ -22,7 +22,7 @@ header nav {
 header nav span {
   font-weight: bold;
   font-size: 23px;
-  color: yellow;
+  color: #FFD600;
 }
 
 header nav button {
@@ -34,6 +34,13 @@ header nav button {
 #content {
   display: flex;
   flex-direction: row;
+  color:  #B6B6B6;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+
 }
 
 #content aside {
@@ -44,4 +51,6 @@ header nav button {
   border-right: 1px solid black;
 
   background: #686868;
+
+ 
 }
