@@ -43,6 +43,7 @@ line-height: 26px;
 
 }
 
+
 #content aside {
   width: 300px;
   min-height: 500px;
@@ -51,6 +52,8 @@ line-height: 26px;
   border-right: 1px solid black;
 
   background: #686868;
+
+  
 
  
 }
