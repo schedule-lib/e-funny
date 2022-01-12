@@ -1,0 +1,20 @@
+{
+  "name": "funny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schedule-lib/Rede-Matrix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schedule-lib/Rede-Matrix/issues"
+  },
+  "homepage": "https://github.com/schedule-lib/Rede-Matrix#readme"
+}
