@@ -6,19 +6,16 @@ header {
   height: 5rem;
   background: #121214;
 }
-
 header nav {
   color: white;
 
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 header nav span {
   font-weight: bold;
   font-size: 23px;
@@ -30,24 +27,13 @@ header nav button {
   width: 120px;
   border-radius: 4px;
 }
-
-#content {
-  display: flex;
-  flex-direction: row;
-  color: #b6b6b6;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
+body {
+  height: 100%;
+  background-color: #686868;
 }
-
-#content aside {
-  width: 300px;
-  min-height: 500px;
-  padding: 10px 20px;
-
-  border-right: 1px solid black;
-
-  background: #686868;
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
 }
