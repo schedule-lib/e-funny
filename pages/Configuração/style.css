@@ -1,0 +1,39 @@
+#container {
+    height: 100%;
+    }
+
+header {
+height: 5rem;
+background: #121214;
+}
+header nav {
+color: white;
+
+max-width: 1200px;
+height: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header nav span {
+font-weight: bold;
+font-size: 23px;
+color: #FFD600;
+}
+
+header nav button {
+height: 2rem;
+width: 120px;
+border-radius: 4px;
+}
+body {
+height: 100%;
+background-color: #686868;
+}
+* {
+padding: 0;
+margin: 0;
+outline: none;
+box-sizing: border-box;
+}
