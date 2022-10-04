@@ -37,3 +37,18 @@ body {
   outline: none;
   box-sizing: border-box;
 }
+#Quadrado{
+  background-color: rgb(158, 157, 157);
+  display: grid;
+  grid-template-columns: 50px 50px 50px; 
+  margin: auto;
+  border-radius: 5%;
+  padding-top: 5%;
+  padding-right: 15%;
+  padding-bottom: 15%;
+  max-width: fit-content;
+  display: flex;
+  }
+  div strong{
+   color: white;
+  }
