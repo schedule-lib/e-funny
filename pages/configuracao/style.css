@@ -40,15 +40,55 @@ body {
 #Quadrado{
   background-color: rgb(158, 157, 157);
   display: grid;
-  grid-template-columns: 50px 50px 50px; 
+  grid-template-columns:50px; 
   margin: auto;
   border-radius: 5%;
   padding-top: 5%;
-  padding-right: 15%;
-  padding-bottom: 15%;
+  padding-right: 10%;
+  padding-bottom: 5%;
   max-width: fit-content;
   display: flex;
   }
   div strong{
    color: white;
-  }
+   font-family: Arial, Verdana, Tahoma, Sans-Serif;
+   font-size: 12px;
+  
+ }
+
+ .divbtn{
+  margin: 0.5em;
+  
+ 
+ }
+ .bt1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  
+  width: 165px;
+  height: 35px;
+  background-color: grey;
+  padding: 9px ;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-end;
+  
+  
+ }
+
+ .bt2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13;
+  border-radius: 10px;
+  width: 165px;
+  height: 35px;
+  background-color: rosybrown;
+  padding: 9px ;
+
+  border: none;
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-end;
+ }
