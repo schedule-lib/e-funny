@@ -1,99 +1,34 @@
 #container {
-  height: 100%;
-}
+    height: 100%;
+  }
+  
+  header {
+    height: 5rem;
+    background: #121214;
+  }
+  header nav {
+    color: white;
+  
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav span {
+    font-weight: bold;
+    font-size: 23px;
+    color: #ffd600;
+  }
+  
+  header nav button {
+    height: 2rem;
+    width: 120px;
+    border-radius: 4px;
+  }
+  body {
+    height: 100%;
+    background-color: #686868;
+  }
 
-header {
-  height: 5rem;
-  background: #121214;
-}
-header nav {
-  color: white;
-
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav span {
-  font-weight: bold;
-  font-size: 23px;
-  color: #ffd600;
-}
-
-header nav button {
-  height: 2rem;
-  width: 120px;
-  border-radius: 4px;
-}
-body {
-  height: 100%;
-  background-color: #686868;
-}
-
-#Quadrado {
-  display: flex;
-  margin: 90pt auto;
-
-  width: 420px;
-  height: 200px;
-
-  padding: 2rem;
-  border-radius: 12px;
-
-  background-color: rgb(158, 157, 157);
-}
-#Quadrado strong {
-  font: 600 normal 1.2rem helvetica, sans-serif;
-}
-
-#Quadrado .meio {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#Quadrado .meio section {
-  display: flex;
-  gap: 0.5em;
-}
-
-div strong {
-  color: white;
-  font-family: Arial, Verdana, Tahoma, Sans-Serif;
-  font-size: 12px;
-}
-
-.divbtn {
-  margin: 0.5em;
-}
-
-.bt1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-
-  width: 165px;
-  height: 35px;
-  background-color: grey;
-  padding: 9px;
-  border-radius: 10px;
-  border: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-
-.bt2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13;
-  border-radius: 10px;
-  width: 165px;
-  height: 35px;
-  background-color: rosybrown;
-  padding: 9px;
-
-  border: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
