@@ -32,3 +32,57 @@
     background-color: #686868;
   }
 
+  #Principal{
+   margin-top: 30px;
+  }
+  .bt1{
+    background-color: #ffd600;
+  }
+  .bt2{
+    background-color: #686868;
+  }
+  .bt3{
+    background-color: #686868;
+  }
+  .bt4{
+    background-color: #686868;
+  }
+
+  #dados{
+   margin: 50pt auto;
+  
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: rgb(73, 73, 73);
+
+ 
+   }
+   .typing1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    
+   }
+   div input{
+    background-color: #999898;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+   }
+   div strong{
+    color: rgb(187, 187, 187);
+   }
+
+   .typing2{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+   
+   .bt5{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+   }
