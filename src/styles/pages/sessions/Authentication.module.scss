@@ -1,0 +1,38 @@
+.container {
+  height: 100vh;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--expo-color-base-light-gray-100);
+
+  > main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-width: 460px;
+    width: 100%;
+
+    > div > h1 {
+      font: normal 500 25px "Inter", sans-serif;
+      line-height: 35px;
+      max-width: 300px;
+      color: #1b1f23;
+    }
+
+    > footer {
+      p {
+        font: 400 14px "Inter", sans-serif;
+        line-height: 22px;
+        font-style: normal;
+
+        a {
+          color: var(--expo-primary);
+        }
+      }
+    }
+  }
+}

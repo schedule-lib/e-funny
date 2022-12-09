@@ -10,6 +10,28 @@
   --yellow-800: #ffd600;
 
   --gray-900: #121212;
+
+  --header-height: 5rem;
+
+  --expo-primary: #4630eb;
+  --expo-secondary: #0000ee;
+  --expo-color-base-light-gray-000: #fdfdfe;
+  --expo-color-base-light-gray-100: #f8f8fa;
+  --expo-color-base-light-gray-200: #f0f1f2;
+  --expo-color-base-light-gray-300: #e1e4e8;
+  --expo-color-base-light-gray-400: #d1d5da;
+  --expo-color-base-light-gray-500: #9b9fa3;
+  --expo-color-base-light-gray-600: #6c737c;
+  --expo-color-base-light-gray-700: #596068;
+  --expo-color-base-light-gray-800: #464d55;
+  --expo-color-base-light-gray-900: #30363c;
+  --expo-color-base-light-gray-1000: #25292e;
+  --expo-theme-text-default: #1b1f23;
+  --expo-theme-border-default: #e1e4e8;
+  --expo-theme-background-default: #e1e4e8;
+
+  --expo-theme-shadows-small: 0 10px 20px rgba(0, 0, 0, 0.1),
+    0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 body {
