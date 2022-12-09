@@ -1,20 +1,28 @@
 {
-  "name": "funny",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "efunny",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/schedule-lib/Rede-Matrix.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/schedule-lib/Rede-Matrix/issues"
-  },
-  "homepage": "https://github.com/schedule-lib/Rede-Matrix#readme"
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
+    "@types/node": "18.11.11",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "next": "13.0.6",
+    "phosphor-react": "^1.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.40.0",
+    "react-hot-toast": "^2.4.0",
+    "sass": "^1.56.2",
+    "typescript": "4.9.4",
+    "yup": "^0.32.11"
+  }
 }

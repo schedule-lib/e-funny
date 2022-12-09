@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --yellow-800: #ffd600;
+
+  --gray-900: #121212;
+}
+
+body {
+  -webkit-font-smoothing: "antialiased";
+
+  background-color: var(--gray-900);
+  color: var(--white);
+
+  font: 400 normal 1rem Segoe UI, Roboto, -apple-system, sans-serif;
+}
+
+body, input, textarea, button, select: {
+  font-family: Segoe UI, Roboto, -apple-system, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
