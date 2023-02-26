@@ -1,0 +1,49 @@
+.container {
+  background-color: var(--gray-900);
+
+  > main {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    h1 {
+      display: block;
+      margin-top: -5rem;
+      font-weight: 700;
+      font-size: 4.2rem;
+      font-family: Segoe UI;
+      color: var(--yellow-800);
+    }
+  }
+
+  .loader {
+    width: 80px;
+    height: 80px;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    > .spinner {
+      border: 12px solid;
+      border-color: #ffd600 transparent #f5e616 transparent;
+      border-radius: 50%;
+      animation: spin-animation 1.2s linear infinite;
+    }
+  }
+
+  @keyframes spin-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

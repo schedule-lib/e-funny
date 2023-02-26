@@ -1,4 +1,4 @@
-import styles from "../../styles/components/Form.module.scss";
+import styles from "./form.module.scss";
 
 interface FormProps extends React.HTMLProps<HTMLFormElement> {
   children: React.ReactNode;

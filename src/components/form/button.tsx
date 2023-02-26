@@ -1,4 +1,4 @@
-import styles from "../../styles/components/Form.module.scss";
+import styles from "./form.module.scss";
 
 interface FormButtonProps extends React.HTMLProps<HTMLButtonElement> {
   isLoading?: boolean;
