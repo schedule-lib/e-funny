@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { Form } from "../../components/form";
 
 import { FormButton } from "../../components/form/button";
@@ -8,6 +10,19 @@ import { FormInput } from "../../components/form/formInput";
 import styles from "./authentication.module.scss";
 
 export default function Authentication() {
+  const [isAuthenticate, setIsAuthenticate] = useState(false);
+
+  const router = useRouter();
+
+  async function handleAuthenticate() {
+    setIsAuthenticate(true);
+    await router.push("/");
+  }
+
+  useEffect(() => {
+    return () => setIsAuthenticate(false);
+  }, []);
+
   return (
     <>
       <Head>
@@ -21,9 +36,9 @@ export default function Authentication() {
           <div>
             <h1>Entrar na plataforma</h1>
           </div>
-          <Form method="POST" onSubmit={() => {}}>
+          <Form method="POST" onSubmit={handleAuthenticate}>
             <FormInput
-              label="Email ou username"
+              label="Nome de usuário"
               htmlFor="username"
               id="username"
               autoComplete="email"
@@ -38,13 +53,17 @@ export default function Authentication() {
               autoComplete="current-password"
             />
 
-            <FormButton isLoading={false} type="submit" text="Entrar" />
+            <FormButton
+              isLoading={isAuthenticate}
+              type="submit"
+              text="Entrar"
+            />
           </Form>
           <footer>
             <p>
-              New to e-funny?{" "}
+              Novo no eFunny?{" "}
               <Link href="/session" passHref>
-                Sign up
+                Cadastrar-se
               </Link>
             </p>
           </footer>

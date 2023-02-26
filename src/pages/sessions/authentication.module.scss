@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
 
-  background: var(--expo-color-base-light-gray-100);
+  background: #121214;
 
   > main {
     display: flex;
@@ -20,7 +20,8 @@
       font: normal 500 25px "Inter", sans-serif;
       line-height: 35px;
       max-width: 300px;
-      color: #1b1f23;
+      // color: #1b1f23;
+      color: #35353b;
     }
 
     > footer {

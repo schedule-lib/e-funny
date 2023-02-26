@@ -1,10 +1,22 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { AppLoading } from "../../components/AppLoading";
 import styles from "./styles.module.scss";
 
 export default function Home() {
   const [appIsLoading, setAppIsLoading] = useState<boolean>(true);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(async () => {
+      setAppIsLoading(false);
+
+      // redirect to the sessions index page
+      await router.push("/sessions/authentication");
+    }, 3000);
+  }, []);
 
   return (
     <>

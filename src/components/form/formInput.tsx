@@ -20,7 +20,9 @@ export function FormInput({
         {!!spanLabel && (
           <span>
             {!!spanLabelHref ? (
-              <a href={spanLabelHref}>{spanLabel}</a>
+              <a className={styles.redirectable} href={spanLabelHref}>
+                {spanLabel}
+              </a>
             ) : (
               spanLabel
             )}

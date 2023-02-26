@@ -15,7 +15,12 @@ export function FormButton({
   return (
     <div className={styles.formController}>
       <button type={type} disabled={isLoading} {...rest}>
-        {isLoading ? <span>loading...</span> : text}
+        {text}{" "}
+        {isLoading && (
+          <span className={styles.loader}>
+            <div className={styles.spinner}></div>
+          </span>
+        )}
       </button>
     </div>
   );

@@ -7,7 +7,7 @@
   border-radius: 0.4rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
-  background: var(--expo-color-base-light-gray-000);
+  background: #202024;
 
   > p {
     font: 400 0.9rem "Inter", sans-serif;
@@ -15,21 +15,56 @@
 
   .formController {
     button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .7rem;
+
       height: 2.4rem;
       width: 100%;
+      border: 0;
       border-radius: 0.2rem;
 
-      font: normal 400 16px "Inter", sans-serif;
+      font: normal 500 1.1rem "Segoe UI", sans-serif;
       line-height: 26px;
       transition: all 0.2s;
+      cursor: pointer;
 
-      background: var(--expo-color-base-light-gray-1000);
-      color: var(--expo-color-base-light-gray-000);
+      background: #f9a839;
+      color: #121214;
 
       &:hover {
-        background: var(--expo-color-base-light-gray-700);
+        background: #e79d35;
+      }
+
+      .loader {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        z-index: 1;
+
+        > .spinner {
+          border: 8px solid;
+          border-color: #121214 transparent #202024 transparent;
+          border-radius: 50%;
+          animation: spin-animation .8s linear infinite;
+        }
+      }
+
+      @keyframes spin-animation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
       }
     }
+  }
+
+  .redirectable {
+    font-size: 14px;
+    color: #4630eb;
   }
 }
 
@@ -43,6 +78,7 @@
       font: normal 400 1.1rem "Inter", sans-serif;
       line-height: 24px;
       margin: 0 0 0.5rem 0;
+      color: #e1e1e6;
     }
     span {
       transition: all 0.2s ease;
@@ -58,13 +94,13 @@
     height: 2.6rem;
 
     padding: 0.5rem;
-    font: normal 400 1.15rem "Inter", sans-serif;
+    font: normal 400 1.09rem "Roboto", sans-serif;
     line-height: 26px;
 
     border-radius: 0.2rem;
-    border: 1px solid var(--expo-color-base-light-gray-200);
+    border: none;
 
-    color: var(--expo-color-base-light-gray-1000);
-    background: var(--expo-color-base-light-gray-100);
+    color: #ffffff;
+    background: #121214;
   }
 }
