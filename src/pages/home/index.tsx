@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+
 import { AppLoading } from "../../components/AppLoading";
+import { Header } from "../../components/header";
+
 import styles from "./styles.module.scss";
 
 export default function Home() {
@@ -23,9 +26,29 @@ export default function Home() {
       {appIsLoading ? (
         <AppLoading />
       ) : (
-        <main className={styles.container}>
-          <h1>elias alexandre</h1>
-        </main>
+        <div className={styles.container}>
+          <Header />
+
+          <main className={styles.content}>
+            <aside className={styles.aside}>
+              <nav>
+                <ul>
+                  <li className={styles.active}>
+                    <a href="/">destaques</a>
+                  </li>
+                  <li>
+                    <a href="/">mais recentes</a>
+                  </li>
+                  <li>
+                    <a href="/">carros</a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+
+            <section></section>
+          </main>
+        </div>
       )}
     </>
   );
