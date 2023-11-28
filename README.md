@@ -1,6 +1,6 @@
 # i Funny
 
-> App publish and list memes
+> App to publish and list memes
 
 ## Overview
 
