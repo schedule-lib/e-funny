@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 
 import styles from "./styles.module.scss";
 
-export default function Authentication() {
+export default function Token() {
   const [isAuthenticate, setIsAuthenticate] = useState(false);
 
   const router = useRouter();
 
   async function handleResetPassword() {
     setIsAuthenticate(true);
-    await router.push("/reset_password/token");
+    await router.push("/");
   }
 
   return (
@@ -26,14 +26,13 @@ export default function Authentication() {
         <main>
           <section>
             <span>
-              Vai ser enviado um código no seu celular para recuperares a sua
-              senha
+              Insira o codigo enviado por email
             </span>
-            <p>Nome de usuário</p>
+            <p>Codigo</p>
           </section>
-          <input type="email" name="username" placeholder="@eliasalexandre" />
+          <input type="text" name="token"/>
           <button type="button" onClick={handleResetPassword}>
-            Recuperar senha
+            Verificar codigo
           </button>
         </main>
       </div>

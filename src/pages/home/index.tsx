@@ -45,6 +45,8 @@ export default function Home() {
                 </ul>
               </nav>
             </aside>
+            <button id={styles.button}>teste</button>
+            
 
             <section></section>
           </main>

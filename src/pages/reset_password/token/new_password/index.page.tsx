@@ -1,10 +1,12 @@
+
+
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-import styles from "./styles.module.scss";
+import styles from "../styles.module.scss";
 
-export default function Authentication() {
+export default function New_password() {
   const [isAuthenticate, setIsAuthenticate] = useState(false);
 
   const router = useRouter();
@@ -26,14 +28,13 @@ export default function Authentication() {
         <main>
           <section>
             <span>
-              Vai ser enviado um código no seu celular para recuperares a sua
-              senha
+              Insira nova senha 
             </span>
-            <p>Nome de usuário</p>
+            <p> nova senha </p>
           </section>
-          <input type="email" name="username" placeholder="@eliasalexandre" />
+          <input type="password" name="password" placeholder="******" />
           <button type="button" onClick={handleResetPassword}>
-            Recuperar senha
+            Confirmar
           </button>
         </main>
       </div>

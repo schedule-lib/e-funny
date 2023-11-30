@@ -1,6 +1,9 @@
 .container {
-
   > .content {
+  }
+
+  #button {p {
+    }
   }
 }
 
@@ -12,21 +15,22 @@
   nav {
     margin-top: 4rem;
     ul {
-    max-width: 180px;
-    margin: 0 auto;
-    font: normal 500 1rem 'Segoe UI', Roboto, sans-serif;
-    transition: all .2s;
+      max-width: 180px;
+      margin: 0 auto;
+      font: normal 500 1rem "Segoe UI", Roboto, sans-serif;
+      transition: all 0.2s;
 
-    li {
-      display: flex;
-      margin: .3rem 0;
-      transition: all .2s;
+      li {
+        display: flex;
+        margin: 0.3rem 0;
+        transition: all 0.2s;
 
-      &.active {
-        color: #F9A839;
-        font-size: 1.2rem;
-        margin: .5rem 0;
+        &.active {
+          color: #f9a839;
+          font-size: 1.2rem;
+          margin: 0.5rem 0;
+        }
       }
     }
-  }}
+  }
 }
